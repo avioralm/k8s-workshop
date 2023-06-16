@@ -1,0 +1,2 @@
+kubectl create ns finance-avior
+kubectl run temp-bus --image=redis:alpine -n finance-avior

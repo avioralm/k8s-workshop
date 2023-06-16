@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: nginx-pod-avior
+  name: nginx-pod-avior
+spec:
+  containers:
+  - image: nginx:alpine
+    name: nginx-pod-avior
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always

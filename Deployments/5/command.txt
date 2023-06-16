@@ -1,0 +1,3 @@
+kubectl delete deploy webapp
+
+watch -n 1 'kubectl get pods'

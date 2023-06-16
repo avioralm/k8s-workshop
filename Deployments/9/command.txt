@@ -1,0 +1,3 @@
+kubectl rollout undo deployment/webapp
+#output
+deployment.apps/webapp rolled back

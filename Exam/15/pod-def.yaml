@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: nginx-critical
+  name: nginx-critical
+spec:
+  containers:
+    - image: nginx
+      name: nginx-critical
+      resources: {}
+  nodeName: node01
+  dnsPolicy: ClusterFirst
+  restartPolicy: OnFailure

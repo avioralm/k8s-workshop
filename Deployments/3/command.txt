@@ -1,0 +1,4 @@
+kubectl get rs -l app=webapp
+#output
+NAME                DESIRED   CURRENT   READY   AGE
+webapp-754bcc647d   5         5         5       3m41s

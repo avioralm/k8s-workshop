@@ -1,0 +1,2 @@
+kubectl get pods  -o wide --field-selector spec.nodeName=k3d-node-1-0
+#output should show nginx-6 is under k3d-node-1-0 node

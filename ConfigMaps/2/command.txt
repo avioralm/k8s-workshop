@@ -1,0 +1,2 @@
+kubectl create configmap keyvalcfgmap --from-file=../1/config.txt
+kubectl get configmap keyvalcfgmap -o yaml

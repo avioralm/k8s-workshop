@@ -1,0 +1,21 @@
+kubectl autoscale deployment webapp --min=10 --max=20 --cpu-percent=85
+
+kubectl get hpa
+#output
+NAME     REFERENCE           TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+webapp   Deployment/webapp   <unknown>/85%   10        20        0          2s
+
+
+kubectl get pods
+#output
+NAME                     READY   STATUS    RESTARTS   AGE
+webapp-99ddcf469-dgmcq   1/1     Running   0          10m
+webapp-99ddcf469-bf27g   1/1     Running   0          36s
+webapp-99ddcf469-7cn4n   1/1     Running   0          36s
+webapp-99ddcf469-ddfst   1/1     Running   0          36s
+webapp-99ddcf469-tn687   1/1     Running   0          36s
+webapp-99ddcf469-mmmhn   1/1     Running   0          36s
+webapp-99ddcf469-5tttk   1/1     Running   0          36s
+webapp-99ddcf469-752sk   1/1     Running   0          36s
+webapp-99ddcf469-z62f6   1/1     Running   0          36s
+webapp-99ddcf469-rhngx   1/1     Running   0          36s

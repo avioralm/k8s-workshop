@@ -1,0 +1,2 @@
+kubectl create service clusterip messaging-service --tcp=6379:6379 --dry-run=client -o yaml > messaging-service.yaml | kubectl set selector "tier=msg" --local -f messaging-service.yaml -o yaml
+kubectl apply -f messaging-service.yaml
